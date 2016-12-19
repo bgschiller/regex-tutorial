@@ -29,7 +29,7 @@ The special characters `^` and `$` represent the start and end of a word.
 
 4. Write a regex to match any line, as long as it ends with a period. It shouldn't count lines that merely *include* a period. Test with `curl https://raw.githubusercontent.com/bgschiller/regex-tutorial/master/sentences | grep '(your regex here)'`
 
-Crossword puzzle helper! Use  https://raw.githubusercontent.com/bgschiller/regex-tutorial/master//words for your words list, or /usr/share/dict/words if you're on mac or linux.
+Crossword puzzle helper! Use  https://raw.githubusercontent.com/bgschiller/regex-tutorial/master/words for your words list, or /usr/share/dict/words if you're on mac or linux.
 
 5. `ad_r_` to decorate
 6. `_l_c__` calm, unexcitable
@@ -43,9 +43,13 @@ To repeat a pattern, you can use curly braces with the number of times you want 
 
 Note: I found that I needed to use `grep`s `-E` flag in order for the repeat-pattern regexes to work. This looks like `< words grep -E 'abc{3}`
 
-8. Find a word with three dotted letters in a row. Credit to The Simpsons for the [inspiration for this problem](bartofwar10.mp3).
+8. Find a word with three dotted letters in a row. Credit to The Simpsons for the [inspiration for this problem](http://download.lardlad.com/sounds/season14/bartofwar10.mp3).
 9. Make a list of words composed only of vowels (consider 'y' to be a vowel for this problem).
 
-To negate a set, use ^. so [^a-d] will match anything *but* a,b,c,d.
+To negate a set, use `^`. so `[^a-d]` will match anything *but* a,b,c,d.
 
 10. Find a word with five consonants in a row.
+
+Further reading:
+
+- https://regexone.com/ is very well-paced, and has great exercises. Highly recommended.
