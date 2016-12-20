@@ -22,7 +22,7 @@ There's a great story about shell scripts at http://www.leancrew.com/all-this/20
 2. Write a regex to match any iso8601-formatted dates that occur during November of any year. (Those look like ‘2012-08-13’, ‘2016-09-08’, ‘YYYY-MM-DD’.) Test with `echo '2014-01-12 2016-11-01 2010-03-11 2011-12-11 2003-11-18' | tr ' ' '\n' | grep '(your regex here)'`
 
 
-The special characters `^` and `$` represent the start and end of a word.
+The special characters `^` and `$` represent the start and end of a line.
 
 
 3. Write a regex that matches ‘pear’ or ‘peer’, but no other words. Test with `echo pear peer pare spaghetti pearls peerless | tr ' ' '\n' | grep '(your regex here)'`
